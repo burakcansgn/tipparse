@@ -11,16 +11,17 @@ namespace TestMyLib
         [TestFixture]
         class BasicDataSourceTest
         {
+         [Test]
+        public void generateclass2()
+        {
 
-            [Test]
-            public void generateclass()
-            {
-                string osman = "BDSr;i1;NAmGITS;";
-                BasicDataSource bds = new BasicDataSource(osman);
-                Assert.AreEqual("GITS", bds.Source);
+            string name = "BDSr;i1;NAmGITS;";
+            BasicDataSource bds = new BasicDataSource(name);
+            Assert.AreEqual(1, bds.Source2);
+            Assert.AreEqual("GITS", bds.Source);
 
-            }
         }
+    }
     }
 
 

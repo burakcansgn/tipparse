@@ -9,11 +9,13 @@ namespace MyLib
     public class BasicDataSource
     {
         public readonly string Source;
+        public readonly int Source2;
+        
 
-
-        public BasicDataSource(string osman)
+        public BasicDataSource(string name)
         {
-            string[] words2 = osman.Split(';');
+            string[] words2 = name.Split(';');
+            Source2 = Int32.Parse(words2[1].Substring(1, 1));
             Source = words2[2].Substring(3,words2[2].Length-3);
                                                         
         }
