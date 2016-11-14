@@ -14,7 +14,7 @@ namespace MyLib
         public BasicDataBusinessDate(string data)
         {
             string[] words = data.Split(';');
-            date = words[1].Substring(2, 8);            
+            date = words[1].Substring(2, words[1].Length-2);            
         }
 
 

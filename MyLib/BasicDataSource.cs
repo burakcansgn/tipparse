@@ -15,7 +15,7 @@ namespace MyLib
         public BasicDataSource(string name)
         {
             string[] words2 = name.Split(';');
-            Source2 = Int32.Parse(words2[1].Substring(1, 1));
+            Source2 = Int32.Parse(words2[1].Substring(1, words2[1].Length-1));
             Source = words2[2].Substring(3,words2[2].Length-3);
                                                         
         }

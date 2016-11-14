@@ -43,6 +43,8 @@
     <Compile Include="BasicDataBusinessDate.cs" />
     <Compile Include="BasicDataSource.cs" />
     <Compile Include="BasicDataTableEntry.cs" />
+    <Compile Include="BasicDataTickSizeEntry.cs" />
+    <Compile Include="BasicDataTickSizeTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

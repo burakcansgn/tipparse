@@ -13,7 +13,7 @@ namespace TestMyLib
     {
 
         [Test]
-        public void generateclass2()
+        public void generateclass3()
         {
             string data = "BDTe;i22;Si01;s1;TEt2;SYm01;NAmR.H. Kullandirilarak Bedelli Sermaye Art;";
             BasicDataTableEntry bdte = new BasicDataTableEntry(data);
