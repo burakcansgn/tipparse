@@ -19,7 +19,7 @@ namespace TestMyLib
             Assert.AreEqual(68,bdts.id);
             Assert.AreEqual("EQ_WR",bdts.si);
             Assert.AreEqual(1,bdts.s);
-            Assert.AreEqual("Q_WR",bdts.nm);
+            Assert.AreEqual("EQ_WR",bdts.nm);
         }
     }
 }

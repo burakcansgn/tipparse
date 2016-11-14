@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicDataBusinessDateTest.cs" />
+    <Compile Include="BasicDataParticipantTest.cs" />
     <Compile Include="BasicDataSourceTest.cs" />
     <Compile Include="BasicDataTableEntryTest.cs" />
     <Compile Include="BasicDataTickSizeEntryTest.cs" />

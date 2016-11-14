@@ -20,7 +20,7 @@ namespace MyLib
             id = Int32.Parse(words2[1].Substring(1, words2[1].Length-1));
             si = words2[2].Substring(2, words2[2].Length - 2);
             s = Int32.Parse(words2[3].Substring(1, words2[3].Length - 1));
-            nm = words2[4].Substring(4, words2[4].Length - 4);
+            nm = words2[4].Substring(3, words2[4].Length - 3);
         }
 
     }
