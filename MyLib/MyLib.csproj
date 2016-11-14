@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicDataBusinessDate.cs" />
+    <Compile Include="BasicDataClearingVenue.cs" />
     <Compile Include="BasicDataParticipant.cs" />
     <Compile Include="BasicDataSource.cs" />
     <Compile Include="BasicDataTableEntry.cs" />
