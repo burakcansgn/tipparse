@@ -12,13 +12,13 @@ namespace TestMyLib
         class BasicDataSourceTest
         {
          [Test]
-        public void generateclass2()
+        public void generateclass02()
         {
 
-            string name = "BDSr;i1;NAmGITS;";
-            BasicDataSource bds = new BasicDataSource(name);
-            Assert.AreEqual(1, bds.Source2);
-            Assert.AreEqual("GITS", bds.Source);
+            string data = "BDSr;i1;NAmGITS;";
+            BasicDataSource bds = new BasicDataSource(data);
+            Assert.AreEqual(1, bds.i);
+            Assert.AreEqual("GITS", bds.NAm);
 
         }
     }

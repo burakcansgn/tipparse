@@ -13,12 +13,6 @@ namespace TestMyLib
     class BasicDataTradingSchemeTest
     {
         [Test]
-         public void deneme()
-        {
-            string se = "20150730";
-            DateTime dt = DateTime.ParseExact(se, "yyyyMMdd", CultureInfo.InvariantCulture);
-        }
-        [Test]
         public void generateclass11()
         {
             TimeSpan ts = new TimeSpan(0, 17, 40, 00, 000);

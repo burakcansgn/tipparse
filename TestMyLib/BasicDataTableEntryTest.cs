@@ -13,16 +13,16 @@ namespace TestMyLib
     {
 
         [Test]
-        public void generateclass3()
+        public void generateclass03()
         {
             string data = "BDTe;i22;Si01;s1;TEt2;SYm01;NAmR.H. Kullandirilarak Bedelli Sermaye Art;";
             BasicDataTableEntry bdte = new BasicDataTableEntry(data);
-            Assert.AreEqual(22,bdte.ID);
-            Assert.AreEqual("01",bdte.sID);
-            Assert.AreEqual(1,bdte.ss);
-            Assert.AreEqual(2,bdte.tet);
-            Assert.AreEqual("01",bdte.sym);
-            Assert.AreEqual("R.H. Kullandirilarak Bedelli Sermaye Art", bdte.nm);
+            Assert.AreEqual(22,bdte.i);
+            Assert.AreEqual("01",bdte.Si);
+            Assert.AreEqual(1,bdte.s);
+            Assert.AreEqual(2,bdte.TEt);
+            Assert.AreEqual("01",bdte.SYm);
+            Assert.AreEqual("R.H. Kullandirilarak Bedelli Sermaye Art", bdte.NAm);
 
 
         }

@@ -8,23 +8,23 @@ namespace MyLib
 {
    public class BasicDataTableEntry
     {
-        public readonly int ID;
-        public readonly string sID;
-        public readonly int ss;
-        public readonly int tet;
-        public readonly string sym;
-        public readonly string nm;
+        public readonly int i;
+        public readonly string Si;
+        public readonly int s;
+        public readonly int TEt;
+        public readonly string SYm;
+        public readonly string NAm;
          
 
         public BasicDataTableEntry(string data)
         {
             string[] words = data.Split(';');
-            ID = Int32.Parse(words[1].Substring(1, words[1].Length - 1));
-            sID = words[2].Substring(2,words[2].Length-2);
-            ss = Int32.Parse(words[3].Substring(1,words[3].Length-1));
-            tet = Int32.Parse(words[4].Substring(3, words[4].Length-3));
-            sym = words[5].Substring(3, words[5].Length - 3);
-            nm = words[6].Substring(3, words[6].Length - 3);
+            i = Int32.Parse(words[1].Substring(1, words[1].Length - 1));
+            Si = words[2].Substring(2,words[2].Length-2);
+            s = Int32.Parse(words[3].Substring(1,words[3].Length-1));
+            TEt = Int32.Parse(words[4].Substring(3, words[4].Length-3));
+            SYm = words[5].Substring(3, words[5].Length - 3);
+            NAm = words[6].Substring(3, words[6].Length - 3);
         }
 
     }

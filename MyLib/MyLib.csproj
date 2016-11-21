@@ -43,6 +43,7 @@
     <Compile Include="BasicDataBusinessDate.cs" />
     <Compile Include="BasicDataClearingVenue.cs" />
     <Compile Include="BasicDataExchange.cs" />
+    <Compile Include="BasicDataList.cs" />
     <Compile Include="BasicDataMarket.cs" />
     <Compile Include="BasicDataNonTradingDays.cs" />
     <Compile Include="BasicDataParticipant.cs" />

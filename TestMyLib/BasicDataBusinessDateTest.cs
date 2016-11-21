@@ -13,11 +13,12 @@ namespace TestMyLib
     {
 
         [Test]
-        public void generateclass()
+        public void generateclass01()
         {
+            DateTime t = new DateTime(2015, 07, 30);
             string data= "BDBu;Dt20150730;";
             BasicDataBusinessDate bdbd = new BasicDataBusinessDate(data);
-            Assert.AreEqual ("20150730",bdbd.date);
+            Assert.AreEqual (t,bdbd.date);
 
         }
     }

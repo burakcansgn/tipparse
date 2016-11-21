@@ -12,7 +12,7 @@ namespace TestMyLib
     class BasicDataTickSizeTableTest
     {
         [Test]
-        public void generateclass4()
+        public void generateclass04()
         {
             string data = "BDTs;i68;SiEQ_WR;s1;NAmEQ_WR;";
             BasicDataTickSizeTable bdts = new BasicDataTickSizeTable(data);
