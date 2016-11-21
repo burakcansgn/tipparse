@@ -48,6 +48,7 @@
     <Compile Include="BasicDataClearingVenueTest.cs" />
     <Compile Include="BasicDataExchangeTest.cs" />
     <Compile Include="BasicDataMarketTest.cs" />
+    <Compile Include="BasicDataNonTradingDaysTest.cs" />
     <Compile Include="BasicDataParticipantTest.cs" />
     <Compile Include="BasicDataSourceTest.cs" />
     <Compile Include="BasicDataTableEntryTest.cs" />

@@ -27,5 +27,6 @@ namespace TestMyLib
             Assert.AreEqual("20140826", BDm.LDa);
             Assert.AreEqual("", BDm.TTd);
         }
+       
     }
 }
