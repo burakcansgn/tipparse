@@ -50,6 +50,7 @@
     <Compile Include="BasicDataTableEntry.cs" />
     <Compile Include="BasicDataTickSizeEntry.cs" />
     <Compile Include="BasicDataTickSizeTable.cs" />
+    <Compile Include="BasicDataTradingScheme.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
