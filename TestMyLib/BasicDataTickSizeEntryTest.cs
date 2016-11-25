@@ -12,7 +12,7 @@ namespace TestMyLib
     class BasicDataTickSizeEntryTest
     {
         [Test]
-        public void generateclass05()
+        public void ParseBasicDataTickSizeEntry()
         {
             string data = "BDTz;i68;SiEQ_WR;s1;TSz0.001;PFr0.001;PTo999999.999;";
             BasicDataTickSizeEntry bdtz = new BasicDataTickSizeEntry(data);

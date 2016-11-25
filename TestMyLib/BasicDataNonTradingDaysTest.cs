@@ -12,7 +12,7 @@ namespace TestMyLib
     class BasicDataNonTradingDaysTest
     {
         [Test]
-        public void generateclass10()
+        public void ParseBasicDataNonTradingDays()
         {
             DateTime t = new DateTime(2015, 09, 23);
             string data = "BDTd;s1;i256;Si080160;Dt20150923;TDt2160;";

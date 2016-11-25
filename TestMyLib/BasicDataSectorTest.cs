@@ -12,7 +12,7 @@ namespace TestMyLib
     class BasicDataSectorTest
     {
         [Test]
-        public void generateclass13()
+        public void ParseBasicDataSector()
         {
             string data = "BDs;i128;Si1410;s1;NAmGAYRIMENKUL FAALIYETLERI;CDLv1;";
             BasicDataSector BDs = new BasicDataSector(data);
@@ -25,7 +25,7 @@ namespace TestMyLib
 
         }
         [Test]
-        public void generateclass14()
+        public void ParseBasicDataSector2()
         {
             string data = "BDs;PAi8;i128;Si1410;s1;NAmGAYRIMENKUL FAALIYETLERI;SYmq;CDLv1;";
             BasicDataSector BDs = new BasicDataSector(data);

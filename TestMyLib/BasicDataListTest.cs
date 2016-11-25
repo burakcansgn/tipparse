@@ -12,7 +12,7 @@ namespace TestMyLib
     class BasicDataListTest
     {
         [Test]
-        public void generateclass12()
+        public void ParseBasicDataList()
         {
             string data = "BDLi;i258;Si080160;s1;PAi8;SYmPDATA;NAmMARKET FOR EXTERNAL PRICE DATA;LCyTRY;TCeY;";
             BasicDataList BDLi = new BasicDataList(data);

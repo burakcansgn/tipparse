@@ -12,7 +12,7 @@ namespace TestMyLib
     class BasicDataClearingVenueTest
     {
         [Test]
-        public void generateclass07()
+        public void ParseBasicDataClearingVenue()
         {
             string data = "BDCv;i250;SiTVS;s1;SYmTVSBTRISXXX;NAmTAKASBANK;";
             BasicDataClearingVenue BDCv = new BasicDataClearingVenue(data);

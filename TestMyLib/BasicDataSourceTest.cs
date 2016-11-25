@@ -12,7 +12,7 @@ namespace TestMyLib
         class BasicDataSourceTest
         {
          [Test]
-        public void generateclass02()
+        public void ParseBasicDataSource()
         {
 
             string data = "BDSr;i1;NAmGITS;";

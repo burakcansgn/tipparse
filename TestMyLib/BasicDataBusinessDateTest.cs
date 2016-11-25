@@ -13,7 +13,7 @@ namespace TestMyLib
     {
 
         [Test]
-        public void generateclass01()
+        public void ParseBasicDataBusinessDate()
         {
             DateTime t = new DateTime(2015, 07, 30);
             string data= "BDBu;Dt20150730;";

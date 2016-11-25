@@ -12,7 +12,7 @@ namespace TestMyLib
     class BasicDataExchangeTest
     {
         [Test]
-        public void generateclass08()
+        public void ParseBasicDataExchange()
         {
             string data = "BDx;i6;Si080;s1;SYmXIST;NAmBorsa Istanbul;CNyTR;MIcXIST;";
             BasicDataExchange BDx = new BasicDataExchange(data);

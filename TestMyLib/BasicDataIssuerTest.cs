@@ -12,7 +12,7 @@ namespace TestMyLib
     class BasicDataIssuerTest
     {
         [Test]
-        public void generateclass15()
+        public void ParseBasicDataIssuer()
         {
             string data = "BDIs;i304;SiAFB;s1;SYmAFB;NAmAKTIF YATIRIM  BANKASI AS;CNyTR;";
             BasicDataIssuer BDs = new BasicDataIssuer(data);

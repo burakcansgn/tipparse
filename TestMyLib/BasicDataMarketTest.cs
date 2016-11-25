@@ -13,7 +13,7 @@ namespace TestMyLib
     class BasicDataMarketTest
     {
         [Test]
-        public void generateclass09()
+        public void ParseBasicDataMarket()
         {
             string data = "BDm;i252;Si255254;s1;Ex10;NAmINTEREST RATE MARKET;SYmINTRT;TOTa+0300;LDa20140826;";
             BasicDataMarket BDm = new BasicDataMarket(data);

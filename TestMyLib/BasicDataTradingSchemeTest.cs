@@ -13,7 +13,7 @@ namespace TestMyLib
     class BasicDataTradingSchemeTest
     {
         [Test]
-        public void generateclass11()
+        public void ParseBasicDataTradingScheme()
         {
             TimeSpan ts = new TimeSpan(0, 17, 40, 00, 000);
              DateTime t = new DateTime(2015, 07, 30);

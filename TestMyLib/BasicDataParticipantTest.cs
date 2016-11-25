@@ -12,7 +12,7 @@ namespace TestMyLib
     class BasicDataParticipantTest
     {
         [Test]
-        public void generateclass06()
+        public void ParseBasicDataParticipant()
         {
             string data = "BDp;i2166;SiBISOG;s1;SYmBISOG;NAmSOCIETE GENERALE ISTANBUL-TURKIYE MERKEZ SB;PAt2164;BIcSOGETRISXXX;GRsN;";
             BasicDataParticipant bdp = new BasicDataParticipant(data);
