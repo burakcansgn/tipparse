@@ -51,6 +51,7 @@
     <Compile Include="BasicDataMarketTest.cs" />
     <Compile Include="BasicDataNonTradingDaysTest.cs" />
     <Compile Include="BasicDataParticipantTest.cs" />
+    <Compile Include="BasicDataSectorTest.cs" />
     <Compile Include="BasicDataSourceTest.cs" />
     <Compile Include="BasicDataTableEntryTest.cs" />
     <Compile Include="BasicDataTickSizeEntryTest.cs" />
