@@ -49,6 +49,7 @@
     <Compile Include="BasicDataNonTradingDays.cs" />
     <Compile Include="BasicDataParticipant.cs" />
     <Compile Include="BasicDataSector.cs" />
+    <Compile Include="BasicDataShare.cs" />
     <Compile Include="BasicDataSource.cs" />
     <Compile Include="BasicDataTableEntry.cs" />
     <Compile Include="BasicDataTickSizeEntry.cs" />
