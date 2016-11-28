@@ -54,6 +54,7 @@
     <Compile Include="BasicDataTickSizeEntry.cs" />
     <Compile Include="BasicDataTickSizeTable.cs" />
     <Compile Include="BasicDataTradable.cs" />
+    <Compile Include="BasicDataTradableSupplementary.cs" />
     <Compile Include="BasicDataTradingScheme.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
