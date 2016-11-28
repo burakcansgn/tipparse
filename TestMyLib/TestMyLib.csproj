@@ -57,6 +57,7 @@
     <Compile Include="BasicDataTableEntryTest.cs" />
     <Compile Include="BasicDataTickSizeEntryTest.cs" />
     <Compile Include="BasicDataTickSizeTableTest.cs" />
+    <Compile Include="BasicDataTradableTest.cs" />
     <Compile Include="BasicDataTradingSchemeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
