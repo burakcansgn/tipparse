@@ -44,6 +44,7 @@
     <Compile Include="BasicDataClearingVenue.cs" />
     <Compile Include="BasicDataDerivative.cs" />
     <Compile Include="BasicDataExchange.cs" />
+    <Compile Include="BasicDataFund.cs" />
     <Compile Include="BasicDataIssuer.cs" />
     <Compile Include="BasicDataList.cs" />
     <Compile Include="BasicDataMarket.cs" />
