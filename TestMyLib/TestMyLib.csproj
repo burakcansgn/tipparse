@@ -67,6 +67,7 @@
     <Compile Include="BasicDataTradableTest.cs" />
     <Compile Include="BasicDataTradingSchemeTest.cs" />
     <Compile Include="BasicDataUnderlyingInfoTest.cs" />
+    <Compile Include="EndOfBasicDataTest.cs" />
     <Compile Include="OrderbookSummaryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
