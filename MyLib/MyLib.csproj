@@ -50,6 +50,7 @@
     <Compile Include="BasicDataMarket.cs" />
     <Compile Include="BasicDataNonTradingDays.cs" />
     <Compile Include="BasicDataParticipant.cs" />
+    <Compile Include="BasicDataRight.cs" />
     <Compile Include="BasicDataSector.cs" />
     <Compile Include="BasicDataShare.cs" />
     <Compile Include="BasicDataSource.cs" />
