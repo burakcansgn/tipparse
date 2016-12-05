@@ -49,6 +49,7 @@
     <Compile Include="BasicDataDerivativeTest.cs" />
     <Compile Include="BasicDataExchangeTest.cs" />
     <Compile Include="BasicDataFundTest.cs" />
+    <Compile Include="BasicDataIndexSupplementaryTest.cs" />
     <Compile Include="BasicDataIssuerTest.cs" />
     <Compile Include="BasicDataListMemberTest.cs" />
     <Compile Include="BasicDataListTest.cs" />
