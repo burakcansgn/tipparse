@@ -53,6 +53,7 @@
     <Compile Include="BasicDataParticipant.cs" />
     <Compile Include="BasicDataRight.cs" />
     <Compile Include="BasicDataSector.cs" />
+    <Compile Include="BasicDataSectorMember.cs" />
     <Compile Include="BasicDataShare.cs" />
     <Compile Include="BasicDataSource.cs" />
     <Compile Include="BasicDataTableEntry.cs" />
