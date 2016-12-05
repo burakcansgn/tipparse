@@ -50,6 +50,7 @@
     <Compile Include="BasicDataExchangeTest.cs" />
     <Compile Include="BasicDataFundTest.cs" />
     <Compile Include="BasicDataIssuerTest.cs" />
+    <Compile Include="BasicDataListMemberTest.cs" />
     <Compile Include="BasicDataListTest.cs" />
     <Compile Include="BasicDataMarketTest.cs" />
     <Compile Include="BasicDataNonTradingDaysTest.cs" />

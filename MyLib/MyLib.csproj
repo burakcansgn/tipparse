@@ -47,6 +47,7 @@
     <Compile Include="BasicDataFund.cs" />
     <Compile Include="BasicDataIssuer.cs" />
     <Compile Include="BasicDataList.cs" />
+    <Compile Include="BasicDataListMember.cs" />
     <Compile Include="BasicDataMarket.cs" />
     <Compile Include="BasicDataNonTradingDays.cs" />
     <Compile Include="BasicDataParticipant.cs" />
