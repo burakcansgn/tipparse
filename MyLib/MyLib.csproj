@@ -61,6 +61,7 @@
     <Compile Include="BasicDataTradableSupplementary.cs" />
     <Compile Include="BasicDataTradingScheme.cs" />
     <Compile Include="BasicDataUnderlyingInfo.cs" />
+    <Compile Include="OrderbookSummary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
