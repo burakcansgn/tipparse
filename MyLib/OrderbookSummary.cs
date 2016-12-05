@@ -41,7 +41,7 @@ namespace MyLib
         public readonly DateTime LTd;
         public readonly DateTime LPd;
         public readonly decimal CWp;
-        string[] checks = { "i", "s", "t", "Dt", "ISOc", "ISOt", "d", "BPr", "APl", "Pf", "Pl", "Ph", "LOp", "Pd", "q", "o", "Rq", "f", "Rt", "SEp", "HEp", "HPMd", "LPm", "LPMd", "HPy", "HPYd", "LPy", "LPYd", "LTd", "LPd", "CWp" };
+        string[] checks = { "i", "s", "t", "Dt", "ISOc", "ISOt", "d", "BPr", "APl", "Pf", "Pl", "Ph", "LOp", "Pd", "q", "o", "Rq", "f", "Rt", "SEp", "HPm", "HPMd", "LPm", "LPMd", "HPy", "HPYd", "LPy", "LPYd", "LTd", "LPd", "CWp" };
         #endregion
 
         public OrderbookSummary(string name)
