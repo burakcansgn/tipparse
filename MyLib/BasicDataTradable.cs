@@ -26,7 +26,7 @@ namespace MyLib
         public readonly DateTime LDa;
         public readonly DateTime TTd;
         public readonly string IEt;
-        public readonly float NMv;
+        public readonly decimal NMv;
         public readonly int ITSz;
         public readonly int NDp;
         public readonly int NDTp;
@@ -40,7 +40,7 @@ namespace MyLib
         public readonly int PTb;
         public readonly int MSe;
         public readonly Boolean HOt;
-        public readonly float LSz;
+        public readonly decimal LSz;
         public readonly Boolean SSv;
         public readonly int MLm;
         public readonly int MLt;
@@ -91,7 +91,7 @@ namespace MyLib
                     else if (word.StartsWith(checks[15]))
                         IEt = word.Substring(3, word.Length - 3);
                     else if (word.StartsWith(checks[16]))
-                        NMv = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        NMv = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[17]))
                         ITSz = Int32.Parse(word.Substring(4, word.Length - 4));
                     else if (word.StartsWith(checks[18]))
@@ -139,7 +139,7 @@ namespace MyLib
                             HOt = true;
                     }
                     else if (word.StartsWith(checks[30]))
-                        LSz = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        LSz = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[31]))
                     {
                         if (word.Substring(3, word.Length - 3) == "N")

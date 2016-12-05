@@ -17,7 +17,7 @@ namespace MyLib
         public readonly DateTime As;
         public readonly DateTime Ae;
         public readonly int ICl;
-        public readonly float TIs;
+        public readonly decimal TIs;
         string[] checks = { "i", "Si", "s", "HOt", "AVq", "As", "Ae", "ICl", "TIs" };
 
         public BasicDataShare(string name)
@@ -52,7 +52,7 @@ namespace MyLib
                     else if (word.StartsWith(checks[7]))
                         ICl = Int32.Parse(word.Substring(3, word.Length - 3));
                     else if (word.StartsWith(checks[8]))
-                        TIs = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        TIs = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
 
                 }
             }

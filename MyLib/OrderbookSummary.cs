@@ -16,31 +16,31 @@ namespace MyLib
         public readonly DateTime Dt;
         public readonly Boolean ISOc;
         public readonly Boolean ISOt;
-        public readonly float d;
-        public readonly float BPr;
-        public readonly float APl;
-        public readonly float Pf;
-        public readonly float Pl;
-        public readonly float Ph;
-        public readonly float LOp;
-        public readonly float Pd;
+        public readonly decimal d;
+        public readonly decimal BPr;
+        public readonly decimal APl;
+        public readonly decimal Pf;
+        public readonly decimal Pl;
+        public readonly decimal Ph;
+        public readonly decimal LOp;
+        public readonly decimal Pd;
         public readonly int q;
-        public readonly float o;
-        public readonly float Rq;
-        public readonly float f;
-        public readonly float Rt;
-        public readonly float SEp;
-        public readonly float HPm;
+        public readonly decimal o;
+        public readonly decimal Rq;
+        public readonly decimal f;
+        public readonly decimal Rt;
+        public readonly decimal SEp;
+        public readonly decimal HPm;
         public readonly DateTime HPMd;
-        public readonly float LPm;
+        public readonly decimal LPm;
         public readonly DateTime LPMd;
-        public readonly float HPy;
+        public readonly decimal HPy;
         public readonly DateTime HPYd;
-        public readonly float LPy;
+        public readonly decimal LPy;
         public readonly DateTime LPYd;
         public readonly DateTime LTd;
         public readonly DateTime LPd;
-        public readonly float CWp;
+        public readonly decimal CWp;
         string[] checks = { "i", "s", "t", "Dt", "ISOc", "ISOt", "d", "BPr", "APl", "Pf", "Pl", "Ph", "LOp", "Pd", "q", "o", "Rq", "f", "Rt", "SEp", "HEp", "HPMd", "LPm", "LPMd", "HPy", "HPYd", "LPy", "LPYd", "LTd", "LPd", "CWp" };
         #endregion
 
@@ -74,47 +74,47 @@ namespace MyLib
                             ISOt = true;
                     }
                     else if (word.StartsWith(checks[6]))
-                        d = float.Parse(word.Substring(1, word.Length - 1), CultureInfo.InvariantCulture);
+                        d = decimal.Parse(word.Substring(1, word.Length - 1), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[7]))
-                        BPr = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        BPr = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[8]))
-                        APl = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        APl = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[9]))
-                        Pf = float.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
+                        Pf = decimal.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[10]))
-                        Pl = float.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
+                        Pl = decimal.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[11]))
-                        Ph = float.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
+                        Ph = decimal.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[12]))
-                        LOp = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        LOp = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[13]))
-                        Pd = float.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
+                        Pd = decimal.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[14]))
                         q = Int32.Parse(word.Substring(1, word.Length - 1));
                     else if (word.StartsWith(checks[15]))
-                        o = float.Parse(word.Substring(1, word.Length - 1), CultureInfo.InvariantCulture);
+                        o = decimal.Parse(word.Substring(1, word.Length - 1), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[16]))
-                        Rq = float.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
+                        Rq = decimal.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[17]))
-                        f = float.Parse(word.Substring(1, word.Length - 1), CultureInfo.InvariantCulture);
+                        f = decimal.Parse(word.Substring(1, word.Length - 1), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[18]))
-                        Rt = float.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
+                        Rt = decimal.Parse(word.Substring(2, word.Length - 2), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[19]))
-                        SEp = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        SEp = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[20]))
-                        HPm = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        HPm = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[21]))
                         HPMd = DateTime.ParseExact(word.Substring(4, word.Length - 4), "yyyyMMdd", CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[22]))
-                        LPm = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        LPm = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[23]))
                         LPMd= DateTime.ParseExact(word.Substring(4, word.Length - 4), "yyyyMMdd", CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[24]))
-                        HPy = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        HPy = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[25]))
                         HPYd = DateTime.ParseExact(word.Substring(4, word.Length - 4), "yyyyMMdd", CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[26]))
-                        LPy = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        LPy = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[27]))
                         LPYd = DateTime.ParseExact(word.Substring(4, word.Length - 4), "yyyyMMdd", CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[28]))
@@ -122,7 +122,7 @@ namespace MyLib
                     else if (word.StartsWith(checks[29]))
                         LPd = DateTime.ParseExact(word.Substring(3, word.Length - 3), "yyyyMMdd", CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[30]))
-                        CWp = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        CWp = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
 
                 }
             }

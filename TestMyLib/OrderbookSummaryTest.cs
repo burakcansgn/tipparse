@@ -30,13 +30,13 @@ namespace TestMyLib
             Assert.AreEqual(true,m.ISOc);
             Assert.AreEqual(true,m.ISOt);
             Assert.AreEqual(57.05f,m.Pl);
-            Assert.AreEqual(65.5,m.HPm);
+            Assert.AreEqual(65.5f,m.HPm);
             Assert.AreEqual(d2,m.HPMd);
             Assert.AreEqual(56,m.LPm);
             Assert.AreEqual(d3,m.LPMd);
-            Assert.AreEqual(96.7,m.HPy);
+            Assert.AreEqual(96.7f,m.HPy);
             Assert.AreEqual(d4,m.HPYd);
-            Assert.AreEqual(53.55, m.LPy);
+            Assert.AreEqual(53.55f, m.LPy);
             Assert.AreEqual(d5,m.LPYd);
             Assert.AreEqual(d6,m.LPd);
         }

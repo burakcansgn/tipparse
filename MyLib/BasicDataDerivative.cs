@@ -13,10 +13,10 @@ namespace MyLib
         public readonly string Si;
         public readonly int s;
         public readonly int DTy;
-        public readonly float TIs;
+        public readonly decimal TIs;
         public readonly int DXt;
-        public readonly float STp;
-        public readonly float CSz;
+        public readonly decimal STp;
+        public readonly decimal CSz;
         public readonly int SEt;
         public readonly DateTime EXb;
         public readonly DateTime EXe;
@@ -40,13 +40,13 @@ namespace MyLib
                     else if (word.StartsWith(checks[3]))
                         DTy = Int32.Parse(word.Substring(3, word.Length - 3));
                     else if (word.StartsWith(checks[4]))
-                        TIs = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        TIs = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[5]))
                         DXt = Int32.Parse(word.Substring(3, word.Length - 3));
                     else if (word.StartsWith(checks[6]))
-                        STp = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        STp = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[7]))
-                        CSz = float.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
+                        CSz = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
                     else if (word.StartsWith(checks[8]))
                         SEt = Int32.Parse(word.Substring(3, word.Length - 3));
                     else if (word.StartsWith(checks[9]))
