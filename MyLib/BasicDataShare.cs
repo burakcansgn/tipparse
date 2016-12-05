@@ -32,7 +32,7 @@ namespace MyLib
                         i = Int32.Parse(word.Substring(1, word.Length - 1));
                     else if (word.StartsWith(checks[1]))
 
-                        Si = word.Substring(2, words.Length-2);
+                        Si = word.Substring(2, word.Length-2);
 
                     else if (word.StartsWith(checks[2]))
                         s = Int32.Parse(word.Substring(1, word.Length - 1));
