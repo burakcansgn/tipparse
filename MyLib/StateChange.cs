@@ -20,23 +20,23 @@ namespace MyLib
         public StateChange(string name)
         {
             string[] words = name.Split(';');
-            foreach (string word in words)
+            for (int j=1;j<words.Length;j++)
             {
                 foreach (string check in checks)
                 {
-                    if (word.StartsWith(checks[0]))
-                        i = Int32.Parse(word.Substring(1, word.Length - 1));
-                    else if (word.StartsWith(checks[1]))
-                        s = Int32.Parse(word.Substring(1, word.Length - 1));
-                    else if (word.StartsWith(checks[2]))
-                        t = TimeSpan.ParseExact(word.Substring(1, word.Length - 1), "hhmmss\\.fff", CultureInfo.InvariantCulture);
-                    else if (word.StartsWith(checks[3]))
-                        Ms = Int32.Parse(word.Substring(2, word.Length - 2));
-                    else if (word.StartsWith(checks[4]))
-                        Sl = Int32.Parse(word.Substring(2, word.Length - 2));
-                    else if (word.StartsWith(checks[5]))
+                    if (words[j].StartsWith(checks[0]))
+                        i = Int32.Parse(words[j].Substring(1, words[j].Length - 1));
+                    else if (words[j].StartsWith(checks[1]))
+                        s = Int32.Parse(words[j].Substring(1, words[j].Length - 1));
+                    else if (words[j].StartsWith(checks[2]))
+                        t = TimeSpan.ParseExact(words[j].Substring(1, words[j].Length - 1), "hhmmss\\.fff", CultureInfo.InvariantCulture);
+                    else if (words[j].StartsWith(checks[3]))
+                        Ms = Int32.Parse(words[j].Substring(2, words[j].Length - 2));
+                    else if (words[j].StartsWith(checks[4]))
+                        Sl = Int32.Parse(words[j].Substring(2, words[j].Length - 2));
+                    else if (words[j].StartsWith(checks[5]))
                     {
-                        if (word.Substring(2, word.Length - 2) == "N")
+                        if (words[j].Substring(2, words[j].Length - 2) == "N")
                             Of = false;
                         else
                             Of = true;

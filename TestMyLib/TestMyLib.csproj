@@ -73,6 +73,7 @@
     <Compile Include="EndOfBasicDataTest.cs" />
     <Compile Include="IndexSummaryTest.cs" />
     <Compile Include="IndexWeightTest.cs" />
+    <Compile Include="OrderbookReferencePriceTest.cs" />
     <Compile Include="OrderbookSummaryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StateChangeTest.cs" />
