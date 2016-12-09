@@ -75,6 +75,7 @@
     <Compile Include="IndexWeightTest.cs" />
     <Compile Include="OrderbookSummaryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateChangeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
