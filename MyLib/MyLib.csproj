@@ -65,6 +65,7 @@
     <Compile Include="BasicDataTradableSupplementary.cs" />
     <Compile Include="BasicDataTradingScheme.cs" />
     <Compile Include="BasicDataUnderlyingInfo.cs" />
+    <Compile Include="CorporateAction.cs" />
     <Compile Include="EndOfBasicData.cs" />
     <Compile Include="IndexSummary.cs" />
     <Compile Include="IndexWeight.cs" />
