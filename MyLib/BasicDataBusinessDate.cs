@@ -17,8 +17,6 @@ namespace MyLib
             string[] words = data.Split(';');
             date =DateTime.ParseExact( words[1].Substring(2, words[1].Length-2),"yyyyMMdd", CultureInfo.InvariantCulture);            
         }
-
-
     }
     
 }

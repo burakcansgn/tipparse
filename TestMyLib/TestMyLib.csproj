@@ -70,6 +70,7 @@
     <Compile Include="BasicDataTradingSchemeTest.cs" />
     <Compile Include="BasicDataUnderlyingInfoTest.cs" />
     <Compile Include="EndOfBasicDataTest.cs" />
+    <Compile Include="IndexSummaryTest.cs" />
     <Compile Include="OrderbookSummaryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

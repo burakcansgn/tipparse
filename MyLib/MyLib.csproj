@@ -66,6 +66,7 @@
     <Compile Include="BasicDataTradingScheme.cs" />
     <Compile Include="BasicDataUnderlyingInfo.cs" />
     <Compile Include="EndOfBasicData.cs" />
+    <Compile Include="IndexSummary.cs" />
     <Compile Include="OrderbookSummary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
