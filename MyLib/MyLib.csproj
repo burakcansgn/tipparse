@@ -69,6 +69,7 @@
     <Compile Include="EndOfBasicData.cs" />
     <Compile Include="IndexSummary.cs" />
     <Compile Include="IndexWeight.cs" />
+    <Compile Include="Orderbook1.cs" />
     <Compile Include="OrderbookReferencePrice.cs" />
     <Compile Include="OrderbookSummary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
