@@ -78,6 +78,7 @@
     <Compile Include="StateChange.cs" />
     <Compile Include="TradeStatistics1.cs" />
     <Compile Include="TradeStatistics2.cs" />
+    <Compile Include="TradeStatistics3.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
