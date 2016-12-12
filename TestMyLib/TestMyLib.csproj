@@ -75,6 +75,7 @@
     <Compile Include="IndexWeightTest.cs" />
     <Compile Include="Orderbook1Test.cs" />
     <Compile Include="Orderbook2Test.cs" />
+    <Compile Include="Orderbook3Test.cs" />
     <Compile Include="OrderbookReferencePriceTest.cs" />
     <Compile Include="OrderbookSummaryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
