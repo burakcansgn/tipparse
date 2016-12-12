@@ -69,6 +69,7 @@
     <Compile Include="BasicDataTradableTest.cs" />
     <Compile Include="BasicDataTradingSchemeTest.cs" />
     <Compile Include="BasicDataUnderlyingInfoTest.cs" />
+    <Compile Include="CallInformation1Test.cs" />
     <Compile Include="CorporateActionTest.cs" />
     <Compile Include="EndOfBasicDataTest.cs" />
     <Compile Include="IndexSummaryTest.cs" />
