@@ -74,6 +74,7 @@
     <Compile Include="CorporateActionTest.cs" />
     <Compile Include="EndOfBasicDataTest.cs" />
     <Compile Include="IndexSummaryTest.cs" />
+    <Compile Include="IndexUpdateTest.cs" />
     <Compile Include="IndexWeightTest.cs" />
     <Compile Include="MBPOrderSnapshotTest.cs" />
     <Compile Include="Orderbook1Test.cs" />

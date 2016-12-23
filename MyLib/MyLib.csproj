@@ -70,6 +70,7 @@
     <Compile Include="CorporateAction.cs" />
     <Compile Include="EndOfBasicData.cs" />
     <Compile Include="IndexSummary.cs" />
+    <Compile Include="IndexUpdate.cs" />
     <Compile Include="IndexWeight.cs" />
     <Compile Include="MBPOrderSnapshot.cs" />
     <Compile Include="Orderbook1.cs" />
