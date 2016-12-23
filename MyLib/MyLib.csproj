@@ -72,6 +72,7 @@
     <Compile Include="IndexSummary.cs" />
     <Compile Include="IndexUpdate.cs" />
     <Compile Include="IndexWeight.cs" />
+    <Compile Include="MarketMakerQuote1.cs" />
     <Compile Include="MBPOrderSnapshot.cs" />
     <Compile Include="Orderbook1.cs" />
     <Compile Include="Orderbook2.cs" />
