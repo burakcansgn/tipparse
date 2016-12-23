@@ -75,6 +75,7 @@
     <Compile Include="MarketMakerQuote1.cs" />
     <Compile Include="MarketMakerQuote2.cs" />
     <Compile Include="MBPOrderSnapshot.cs" />
+    <Compile Include="News.cs" />
     <Compile Include="Orderbook1.cs" />
     <Compile Include="Orderbook2.cs" />
     <Compile Include="Orderbook3.cs" />

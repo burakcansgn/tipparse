@@ -79,6 +79,7 @@
     <Compile Include="MarketMakerQuote1Test.cs" />
     <Compile Include="MarketMakerQuote2Test.cs" />
     <Compile Include="MBPOrderSnapshotTest.cs" />
+    <Compile Include="NewsTest.cs" />
     <Compile Include="Orderbook1Test.cs" />
     <Compile Include="Orderbook2Test.cs" />
     <Compile Include="Orderbook3Test.cs" />
