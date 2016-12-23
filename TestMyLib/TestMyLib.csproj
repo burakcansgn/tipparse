@@ -86,6 +86,8 @@
     <Compile Include="TradeStatistics1Test.cs" />
     <Compile Include="TradeStatistics2Test.cs" />
     <Compile Include="TradeStatistics3Test.cs" />
+    <Compile Include="TradeTest.cs" />
+    <Compile Include="TurnoverListUpdateTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
