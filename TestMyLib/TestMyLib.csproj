@@ -77,6 +77,7 @@
     <Compile Include="IndexUpdateTest.cs" />
     <Compile Include="IndexWeightTest.cs" />
     <Compile Include="MarketMakerQuote1Test.cs" />
+    <Compile Include="MarketMakerQuote2Test.cs" />
     <Compile Include="MBPOrderSnapshotTest.cs" />
     <Compile Include="Orderbook1Test.cs" />
     <Compile Include="Orderbook2Test.cs" />
