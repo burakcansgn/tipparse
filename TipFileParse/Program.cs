@@ -123,6 +123,46 @@ namespace TipFileParse
                 {
                     BasicDataIndex bdin = new BasicDataIndex(items[i]);
                 }
+                else if (messagefields[0] == "BDIp")
+                {
+                    BasicDataIndexSupplementary bdip = new BasicDataIndexSupplementary(items[i]);
+                }
+                else if (messagefields[0] == "BDIm")
+                {
+                    BasicDataIndexMember bdim = new BasicDataIndexMember(items[i]);
+                }
+                else if (messagefields[0] == "Is")
+                {
+                    IndexSummary indexsum = new IndexSummary(items[i]);
+                }
+                else if (messagefields[0] == "Iw")
+                {
+                    IndexWeight indexw = new IndexWeight(items[i]);
+                }
+                else if (messagefields[0] == "TRh")
+                {
+                    CorporateAction trh = new CorporateAction(items[i]);
+                }
+                else if (messagefields[0] == "s")
+                {
+                    StateChange s = new StateChange(items[i]);
+                }
+                else if (messagefields[0] == "r")
+                {
+                    OrderbookReferencePrice r = new OrderbookReferencePrice(items[i]);
+                }
+                else if (messagefields[0] == "o")
+                {
+                    Orderbook1 o = new Orderbook1(items[i]);
+                }
+                else if (messagefields[0] == "p")
+                {
+                    Orderbook2 p = new Orderbook2(items[i]);
+                }
+                else if (messagefields[0] == "z")
+                {
+                    Orderbook3 z = new Orderbook3(items[i]);
+                }
 
             }
         }

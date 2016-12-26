@@ -153,6 +153,7 @@ namespace MyLib
                     MLt = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
                 else if (words[m].StartsWith(checks[34]))
                     TRId = Int32.Parse(words[m].Substring(4, words[m].Length - 4));
+
                 else if (words[m].StartsWith(checks[35]))
                 {
                     string words1 = words[m].Substring(3, words[m].Length - 3);

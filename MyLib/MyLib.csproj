@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aTuple.cs" />
     <Compile Include="BasicDataBusinessDate.cs" />
     <Compile Include="BasicDataClearingVenue.cs" />
     <Compile Include="BasicDataDerivative.cs" />
@@ -66,13 +67,16 @@
     <Compile Include="BasicDataTradableSupplementary.cs" />
     <Compile Include="BasicDataTradingScheme.cs" />
     <Compile Include="BasicDataUnderlyingInfo.cs" />
+    <Compile Include="bTuple.cs" />
     <Compile Include="CallInformation1.cs" />
     <Compile Include="CallInformation2.cs" />
     <Compile Include="CorporateAction.cs" />
     <Compile Include="EndOfBasicData.cs" />
+    <Compile Include="gTuple.cs" />
     <Compile Include="IndexSummary.cs" />
     <Compile Include="IndexUpdate.cs" />
     <Compile Include="IndexWeight.cs" />
+    <Compile Include="jTuple.cs" />
     <Compile Include="MarketMakerQuote1.cs" />
     <Compile Include="MarketMakerQuote2.cs" />
     <Compile Include="MBPOrderSnapshot.cs" />
