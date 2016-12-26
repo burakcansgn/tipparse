@@ -16,12 +16,14 @@ namespace MyLib
         public readonly int c;
         public readonly int e;
         public readonly decimal d;
-        public readonly decimal b;
-        public readonly decimal a;
+        public List<bTuple> btuple;
+        public List<aTuple> atuple;
         string[] checks = { "i", "s", "t", "Of", "c", "e", "d", "b", "a" };
 
         public Orderbook1(string name)
         {
+            btuple = new List<bTuple>();
+            atuple = new List<aTuple>();
             string[] words = name.Split(';');
             for (int j = 1; j < words.Length; j++)
             {
@@ -46,9 +48,21 @@ namespace MyLib
                 else if (words[j].StartsWith(checks[6]))
                     d = decimal.Parse(words[j].Substring(1, words[j].Length - 1), CultureInfo.InvariantCulture);
                 else if (words[j].StartsWith(checks[7]))
-                    b = decimal.Parse(words[j].Substring(1, words[j].Length - 1), CultureInfo.InvariantCulture);
+                {
+                    string[] bArray = words[j].Split(':');
+                    int bInt = Int32.Parse(bArray[0].Substring(1, bArray[0].Length - 1));
+                    decimal bDecimal = decimal.Parse(bArray[1], CultureInfo.InvariantCulture);
+                    bTuple b = new bTuple(bInt, bDecimal);
+                    btuple.Add(b);
+                }
                 else if (words[j].StartsWith(checks[8]))
-                    a = decimal.Parse(words[j].Substring(1, words[j].Length - 1), CultureInfo.InvariantCulture);
+                {
+                    string[] aArray = words[j].Split(':');
+                    int aInt = Int32.Parse(aArray[0].Substring(1, aArray[0].Length - 1));
+                    decimal aDecimal = decimal.Parse(aArray[1], CultureInfo.InvariantCulture);
+                    aTuple a = new aTuple(aInt, aDecimal);
+                    atuple.Add(a);
+                }
 
             }
         }
