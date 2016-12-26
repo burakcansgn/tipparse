@@ -163,7 +163,18 @@ namespace TipFileParse
                 {
                     Orderbook3 z = new Orderbook3(items[i]);
                 }
-
+                else if (messagefields[0] == "u")
+                {
+                    TradeStatistics1 u = new TradeStatistics1(items[i]);
+                }
+                else if (messagefields[0] == "v")
+                {
+                    TradeStatistics2 v = new TradeStatistics2(items[i]);
+                }
+                else if (messagefields[0] == "w")
+                {
+                    TradeStatistics3 w = new TradeStatistics3(items[i]);
+                }
             }
         }
     }

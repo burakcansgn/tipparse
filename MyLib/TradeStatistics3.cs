@@ -45,7 +45,7 @@ namespace MyLib
                 else if (words[m].StartsWith(checks[5]))
                     Ph = decimal.Parse(words[m].Substring(2, words[m].Length - 2), CultureInfo.InvariantCulture);
                 else if (words[m].StartsWith(checks[6]))
-                    LOp = decimal.Parse(words[m].Substring(2, words[m].Length - 2), CultureInfo.InvariantCulture);
+                    LOp = decimal.Parse(words[m].Substring(3, words[m].Length - 3), CultureInfo.InvariantCulture);
                 else if (words[m].StartsWith(checks[7]))
                     Pd = decimal.Parse(words[m].Substring(2, words[m].Length - 2), CultureInfo.InvariantCulture);
                 else if (words[m].StartsWith(checks[8]))
