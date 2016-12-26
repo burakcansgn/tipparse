@@ -16,20 +16,26 @@ namespace MyLib
         public readonly int c;
         public readonly int e;
         public readonly decimal d;
-        public readonly decimal b;
-        public readonly decimal g;
-        public readonly int h;
-        public readonly decimal a;
-        public readonly decimal j;
-        public readonly int k;
+        public List<bTuple> btuple;
+        public List<gTuple> gtuple;
+        public readonly List<int> h;
+        public List<aTuple> atuple;
+        public List<jTuple> jtuple;
+        public readonly List<int> k;
         public readonly decimal Bw;
         public readonly decimal Bt;
         public readonly decimal Aw;
         public readonly decimal At;
-        string[] checks = { "i", "s", "t", "Of", "c", "e", "d", "b", "g", "h", "a", "m", "k","Bw","Bt","Aw","At"};
+        string[] checks = { "i", "s", "t", "Of", "c", "e", "d", "b", "g", "h", "a", "m", "k", "Bw", "Bt", "Aw", "At" };
 
         public Orderbook3(string name)
         {
+            h = new List<int>();
+            k = new List<int>();
+            btuple = new List<bTuple>();
+            gtuple = new List<gTuple>();
+            atuple = new List<aTuple>();
+            jtuple = new List<jTuple>();
             string[] words = name.Split(';');
             for (int m = 1; m < words.Length; m++)
             {
@@ -54,17 +60,56 @@ namespace MyLib
                 else if (words[m].StartsWith(checks[6]))
                     d = decimal.Parse(words[m].Substring(1, words[m].Length - 1), CultureInfo.InvariantCulture);
                 else if (words[m].StartsWith(checks[7]))
-                    b = decimal.Parse(words[m].Substring(1, words[m].Length - 1), CultureInfo.InvariantCulture);
+                {
+                    string[] bArray = words[m].Split(':');
+                    int bInt = Int32.Parse(bArray[0].Substring(1, bArray[0].Length - 1));
+                    decimal bDecimal = decimal.Parse(bArray[1], CultureInfo.InvariantCulture);
+                    bTuple b = new bTuple(bInt, bDecimal);
+                    btuple.Add(b);
+                }
                 else if (words[m].StartsWith(checks[8]))
-                    g = decimal.Parse(words[m].Substring(1, words[m].Length - 1), CultureInfo.InvariantCulture);
+                {
+                    string[] gArray = words[m].Split(':');
+                    int gInt = Int32.Parse(gArray[0].Substring(1, gArray[0].Length - 1));
+                    decimal gDecimal = decimal.Parse(gArray[1], CultureInfo.InvariantCulture);
+                    gTuple g = new gTuple(gInt, gDecimal);
+                    gtuple.Add(g);
+                }
                 else if (words[m].StartsWith(checks[9]))
-                    h = Int32.Parse(words[m].Substring(1, words[m].Length - 1));
+                {
+                    string words1 = words[m].Substring(1, words[m].Length - 1);
+                    string[] hnums = words1.Split(':');
+                    foreach (var hnum in hnums)
+                    {
+                        h.Add(Int32.Parse(hnum));
+                    }
+                }
+
                 else if (words[m].StartsWith(checks[10]))
-                    a = decimal.Parse(words[m].Substring(1, words[m].Length - 1), CultureInfo.InvariantCulture);
+                {
+                    string[] aArray = words[m].Split(':');
+                    int aInt = Int32.Parse(aArray[0].Substring(1, aArray[0].Length - 1));
+                    decimal aDecimal = decimal.Parse(aArray[1], CultureInfo.InvariantCulture);
+                    aTuple a = new aTuple(aInt, aDecimal);
+                    atuple.Add(a);
+                }
                 else if (words[m].StartsWith(checks[11]))
-                    j = decimal.Parse(words[m].Substring(1, words[m].Length - 1), CultureInfo.InvariantCulture);
+                {
+                    string[] jArray = words[m].Split(':');
+                    int jInt = Int32.Parse(jArray[0].Substring(1, jArray[0].Length - 1));
+                    decimal jDecimal = decimal.Parse(jArray[1], CultureInfo.InvariantCulture);
+                    jTuple j = new jTuple(jInt, jDecimal);
+                    jtuple.Add(j);
+                }
                 else if (words[m].StartsWith(checks[12]))
-                    k = Int32.Parse(words[m].Substring(1, words[m].Length - 1));
+                {
+                    string words1 = words[m].Substring(1, words[m].Length - 1);
+                    string[] knums = words1.Split(':');
+                    foreach (var knum in knums)
+                    {
+                        k.Add(Int32.Parse(knum));
+                    }
+                }
                 else if (words[m].StartsWith(checks[13]))
                     Bw = decimal.Parse(words[m].Substring(2, words[m].Length - 2), CultureInfo.InvariantCulture);
                 else if (words[m].StartsWith(checks[14]))
