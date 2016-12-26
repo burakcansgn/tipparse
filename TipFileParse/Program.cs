@@ -70,6 +70,18 @@ namespace TipFileParse
                 {
                     BasicDataSector bds = new BasicDataSector(items[i]);
                 }
+                else if (messagefields[0] == "BDIs")
+                {
+                    BasicDataIssuer bdis = new BasicDataIssuer(items[i]);
+                }
+                else if (messagefields[0] == "BDt")
+                {
+                    BasicDataTradable bdt = new BasicDataTradable(items[i]);
+                }
+                else if (messagefields[0] == "BDTr")
+                {
+                    BasicDataTradableSupplementary bdtr = new BasicDataTradableSupplementary(items[i]);
+                }
 
             }
         }

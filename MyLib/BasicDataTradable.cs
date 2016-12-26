@@ -45,127 +45,135 @@ namespace MyLib
         public readonly int MLm;
         public readonly int MLt;
         public readonly int TRId;
-        public readonly int MMk;
+        public List<int> MMk;
         public readonly string TRm;
         public readonly Boolean GRs;
+
         private string[] checks = { "i", "Si", "s", "Mk", "INi", "SYm", "NAm", "SNm", "ISi", "CUi", "CUt", "PRt", "VOd", "LDa", "TTd", "IEt", "NMv", "ITSz", "NDp", "NDTp", "CLId", "CNy", "SSc", "STy", "AUm", "TRa", "PTa", "PTb", "MSe", "HOt", "LSz", "SSv", "MLm", "MLt", "TRId", "MMk", "TRm", "GRs" };
         #endregion
         public BasicDataTradable(string name)
         {
+            MMk = new List<int>();
             string[] words = name.Split(';');
-            foreach (string word in words)
+            for (int m = 1; m < words.Length; m++)
             {
-                foreach (string check in checks)
+                #region 37if
+                if (words[m].StartsWith(checks[0]))
+                    i = Int32.Parse(words[m].Substring(1, words[m].Length - 1));
+                else if (words[m].StartsWith(checks[1]))
+                    Si = words[m].Substring(2, words[m].Length - 2);
+                else if (words[m].StartsWith(checks[2]))
+                    s = Int32.Parse(words[m].Substring(1, words[m].Length - 1));
+                else if (words[m].StartsWith(checks[3]))
+                    Mk = Int32.Parse(words[m].Substring(2, words[m].Length - 2));
+                else if (words[m].StartsWith(checks[4]))
+                    INi = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[5]))
+                    SYm = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[6]))
+                    NAm = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[7]))
+                    SNm = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[8]))
+                    ISi = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
+                else if (words[m].StartsWith(checks[9]))
+                    CUi = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[10]))
+                    CUt = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[11]))
+                    PRt = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
+                else if (words[m].StartsWith(checks[12]))
+                    VOd = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
+                else if (words[m].StartsWith(checks[13]))
+                    LDa = DateTime.ParseExact(words[m].Substring(3, words[m].Length - 3), "yyyyMMdd", CultureInfo.InvariantCulture);
+                else if (words[m].StartsWith(checks[14]))
+                    LDa = DateTime.ParseExact(words[m].Substring(3, words[m].Length - 3), "yyyyMMdd", CultureInfo.InvariantCulture);
+                else if (words[m].StartsWith(checks[15]))
+                    IEt = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[16]))
+                    NMv = decimal.Parse(words[m].Substring(3, words[m].Length - 3), CultureInfo.InvariantCulture);
+                else if (words[m].StartsWith(checks[17]))
+                    ITSz = Int32.Parse(words[m].Substring(4, words[m].Length - 4));
+                else if (words[m].StartsWith(checks[18]))
+                    NDp = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
+                else if (words[m].StartsWith(checks[19]))
+                    NDTp = Int32.Parse(words[m].Substring(4, words[m].Length - 4));
+                else if (words[m].StartsWith(checks[20]))
+                    CLId = Int32.Parse(words[m].Substring(4, words[m].Length - 4));
+                else if (words[m].StartsWith(checks[21]))
+                    CNy = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[22]))
+                    SSc = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
+                else if (words[m].StartsWith(checks[23]))
+                    STy = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
+                else if (words[m].StartsWith(checks[24]))
                 {
-                    #region 37if
-                    if (word.StartsWith(checks[0]))
-                        i = Int32.Parse(word.Substring(1, word.Length - 1));
-                    else if (word.StartsWith(checks[1]))
-                        Si = word.Substring(2, word.Length - 2);
-                    else if (word.StartsWith(checks[2]))
-                        s = Int32.Parse(word.Substring(1, word.Length - 1));
-                    else if (word.StartsWith(checks[3]))
-                        Mk = Int32.Parse(word.Substring(2, word.Length - 2));
-                    else if (word.StartsWith(checks[4]))
-                        INi = word.Substring(3, word.Length - 3);
-                    else if (word.StartsWith(checks[5]))
-                        SYm = word.Substring(3, word.Length - 3);
-                    else if (word.StartsWith(checks[6]))
-                        NAm = word.Substring(3, word.Length - 3);
-                    else if (word.StartsWith(checks[7]))
-                        SNm = word.Substring(3, word.Length - 3);
-                    else if (word.StartsWith(checks[8]))
-                        ISi = Int32.Parse(word.Substring(3, word.Length - 3));
-                    else if (word.StartsWith(checks[9]))
-                        CUi = word.Substring(3, word.Length - 3);
-                    else if (word.StartsWith(checks[10]))
-                        CUt = word.Substring(3, word.Length - 3);
-                    else if (word.StartsWith(checks[11]))
-                        PRt = Int32.Parse(word.Substring(3, word.Length - 3));
-                    else if (word.StartsWith(checks[12]))
-                        VOd = Int32.Parse(word.Substring(3, word.Length - 3));
-                    else if (word.StartsWith(checks[13]))
-                        LDa = DateTime.ParseExact(word.Substring(3, word.Length - 3), "yyyyMMdd", CultureInfo.InvariantCulture);
-                    else if (word.StartsWith(checks[14]))
-                        LDa = DateTime.ParseExact(word.Substring(3, word.Length - 3), "yyyyMMdd", CultureInfo.InvariantCulture);
-                    else if (word.StartsWith(checks[15]))
-                        IEt = word.Substring(3, word.Length - 3);
-                    else if (word.StartsWith(checks[16]))
-                        NMv = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
-                    else if (word.StartsWith(checks[17]))
-                        ITSz = Int32.Parse(word.Substring(4, word.Length - 4));
-                    else if (word.StartsWith(checks[18]))
-                        NDp = Int32.Parse(word.Substring(3, word.Length - 3));
-                    else if (word.StartsWith(checks[19]))
-                        NDTp = Int32.Parse(word.Substring(4, word.Length - 4));
-                    else if (word.StartsWith(checks[20]))
-                        CLId = Int32.Parse(word.Substring(4, word.Length - 4));
-                    else if (word.StartsWith(checks[21]))
-                        CNy = word.Substring(3, word.Length - 3);
-                    else if (word.StartsWith(checks[22]))
-                        SSc = Int32.Parse(word.Substring(3, word.Length - 3));
-                    else if (word.StartsWith(checks[23]))
-                        STy = Int32.Parse(word.Substring(3, word.Length - 3));
-                    else if (word.StartsWith(checks[24]))
-                    {
-                        if (word.Substring(3, word.Length - 3) == "N")
-                            AUm = false;
-                        else
-                            AUm = true;
-                    }
-                    else if (word.StartsWith(checks[25]))
-                    {
-                        if (word.Substring(3, word.Length - 3) == "N")
-                            TRa = false;
-                        else
-                            TRa = true;
-                    }
-                    else if (word.StartsWith(checks[26]))
-                    {
-                        if (word.Substring(3, word.Length - 3) == "N")
-                            PTa = false;
-                        else
-                            PTa = true;
-                    }
-                    else if (word.StartsWith(checks[27]))
-                        PTb = Int32.Parse(word.Substring(3, word.Length - 3));
-                    else if (word.StartsWith(checks[28]))
-                        MSe = Int32.Parse(word.Substring(3, word.Length - 3));
-                    else if (word.StartsWith(checks[29]))
-                    {
-                        if (word.Substring(3, word.Length - 3) == "N")
-                            HOt = false;
-                        else
-                            HOt = true;
-                    }
-                    else if (word.StartsWith(checks[30]))
-                        LSz = decimal.Parse(word.Substring(3, word.Length - 3), CultureInfo.InvariantCulture);
-                    else if (word.StartsWith(checks[31]))
-                    {
-                        if (word.Substring(3, word.Length - 3) == "N")
-                            SSv = false;
-                        else
-                            SSv = true;
-                    }
-                    else if (word.StartsWith(checks[32]))
-                        MLm = Int32.Parse(word.Substring(3, word.Length - 3));
-                    else if (word.StartsWith(checks[33]))
-                        MLt = Int32.Parse(word.Substring(3, word.Length - 3));
-                    else if (word.StartsWith(checks[34]))
-                        TRId = Int32.Parse(word.Substring(4, word.Length - 4));
-                    else if (word.StartsWith(checks[35]))
-                        MMk = Int32.Parse(word.Substring(3, word.Length - 3));
-                    else if (word.StartsWith(checks[36]))
-                        TRm = word.Substring(3, word.Length - 3);
-                    else if (word.StartsWith(checks[37]))
-                    {
-                        if (word.Substring(3, word.Length - 3) == "N")
-                            GRs = false;
-                        else
-                            GRs = true;
-                    }
-#endregion
+                    if (words[m].Substring(3, words[m].Length - 3) == "N")
+                        AUm = false;
+                    else
+                        AUm = true;
                 }
+                else if (words[m].StartsWith(checks[25]))
+                {
+                    if (words[m].Substring(3, words[m].Length - 3) == "N")
+                        TRa = false;
+                    else
+                        TRa = true;
+                }
+                else if (words[m].StartsWith(checks[26]))
+                {
+                    if (words[m].Substring(3, words[m].Length - 3) == "N")
+                        PTa = false;
+                    else
+                        PTa = true;
+                }
+                else if (words[m].StartsWith(checks[27]))
+                    PTb = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
+                else if (words[m].StartsWith(checks[28]))
+                    MSe = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
+                else if (words[m].StartsWith(checks[29]))
+                {
+                    if (words[m].Substring(3, words[m].Length - 3) == "N")
+                        HOt = false;
+                    else
+                        HOt = true;
+                }
+                else if (words[m].StartsWith(checks[30]))
+                    LSz = decimal.Parse(words[m].Substring(3, words[m].Length - 3), CultureInfo.InvariantCulture);
+                else if (words[m].StartsWith(checks[31]))
+                {
+                    if (words[m].Substring(3, words[m].Length - 3) == "N")
+                        SSv = false;
+                    else
+                        SSv = true;
+                }
+                else if (words[m].StartsWith(checks[32]))
+                    MLm = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
+                else if (words[m].StartsWith(checks[33]))
+                    MLt = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
+                else if (words[m].StartsWith(checks[34]))
+                    TRId = Int32.Parse(words[m].Substring(4, words[m].Length - 4));
+                else if (words[m].StartsWith(checks[35]))
+                {
+                    string words1 = words[m].Substring(3, words[m].Length - 3);
+                    string[] mmknums = words1.Split(',');
+                    foreach (var mmknum in mmknums)
+                    {
+                        MMk.Add(Int32.Parse(mmknum));
+                    }
+
+                }
+
+                else if (words[m].StartsWith(checks[36]))
+                    TRm = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[37]))
+                {
+                    if (words[m].Substring(3, words[m].Length - 3) == "N")
+                        GRs = false;
+                    else
+                        GRs = true;
+                }
+                #endregion
             }
         }
     }
