@@ -29,13 +29,13 @@ namespace MyLib
                     Si = words[m].Substring(2, words[m].Length - 2);
                 else if (words[m].StartsWith(checks[2]))
                     s = Int32.Parse(words[m].Substring(1, words[m].Length - 1));
-                else if (words[m].StartsWith(checks[1]))
+                else if (words[m].StartsWith(checks[3]))
                     SYm = words[m].Substring(3, words[m].Length - 3);
-                else if (words[m].StartsWith(checks[1]))
+                else if (words[m].StartsWith(checks[4]))
                     NAm = words[m].Substring(3, words[m].Length - 3);
-                else if (words[m].StartsWith(checks[1]))
+                else if (words[m].StartsWith(checks[5]))
                     CNy = words[m].Substring(3, words[m].Length - 3);
-                else if (words[m].StartsWith(checks[1]))
+                else if (words[m].StartsWith(checks[6]))
                     MIc = words[m].Substring(3, words[m].Length - 3);
 
             }
