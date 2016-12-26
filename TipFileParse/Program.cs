@@ -175,6 +175,46 @@ namespace TipFileParse
                 {
                     TradeStatistics3 w = new TradeStatistics3(items[i]);
                 }
+                else if (messagefields[0] == "c")
+                {
+                    CallInformation1 c = new CallInformation1(items[i]);
+                }
+                else if (messagefields[0] == "Cl")
+                {
+                    CallInformation2 cl = new CallInformation2(items[i]);
+                }
+                else if (messagefields[0] == "k")
+                {
+                    MBPOrderSnapshot k = new MBPOrderSnapshot(items[i]);
+                }
+                else if (messagefields[0] == "t")
+                {
+                    Trade t = new Trade(items[i]);
+                }
+                else if (messagefields[0] == "l")
+                {
+                    TurnoverListUpdate l = new TurnoverListUpdate(items[i]);
+                }
+                else if (messagefields[0] == "i")
+                {
+                    IndexUpdate i1 = new IndexUpdate(items[i]);
+                }
+                else if (messagefields[0] == "q")
+                {
+                    MarketMakerQuote1 q = new MarketMakerQuote1(items[i]);
+                }
+                else if (messagefields[0] == "y")
+                {
+                    MarketMakerQuote2 y = new MarketMakerQuote2(items[i]);
+                }
+                else if (messagefields[0] == "n")
+                {
+                    News n = new News(items[i]);
+                }
+                else
+                {
+                    throw new Exception("Unknown TIP Message = " + items[i]);
+                }
             }
         }
     }
