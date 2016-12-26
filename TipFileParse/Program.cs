@@ -21,6 +21,7 @@ namespace TipFileParse
                 if (messagefields[0] == "BDBu")
                 {
                     BasicDataBusinessDate bdbu = new BasicDataBusinessDate(items[i]);
+                    Console.WriteLine(bdbu.ToString());
                 }
                 else if (messagefields[0] == "BDSr")
                 {
@@ -81,6 +82,46 @@ namespace TipFileParse
                 else if (messagefields[0] == "BDTr")
                 {
                     BasicDataTradableSupplementary bdtr = new BasicDataTradableSupplementary(items[i]);
+                }
+                else if (messagefields[0] == "BDSh")
+                {
+                    BasicDataShare bdsh = new BasicDataShare(items[i]);
+                }
+                else if (messagefields[0] == "BDDe")
+                {
+                    BasicDataDerivative bdde = new BasicDataDerivative(items[i]);
+                }
+                else if (messagefields[0] == "BDEt")
+                {
+                    BasicDataFund bdet = new BasicDataFund(items[i]);
+                }
+                else if (messagefields[0] == "BDRi")
+                {
+                    BasicDataRight bdri = new BasicDataRight(items[i]);
+                }
+                else if (messagefields[0] == "BDUi")
+                {
+                    BasicDataUnderlyingInfo bdui = new BasicDataUnderlyingInfo(items[i]);
+                }
+                else if (messagefields[0] == "m")
+                {
+                    OrderbookSummary m = new OrderbookSummary(items[i]);
+                }
+                else if (messagefields[0] == "BDLm")
+                {
+                    BasicDataListMember bdlm = new BasicDataListMember(items[i]);
+                }
+                else if (messagefields[0] == "BDSm")
+                {
+                    BasicDataSectorMember bdsm = new BasicDataSectorMember(items[i]);
+                }
+                else if (messagefields[0] == "EOBd")
+                {
+                    EndOfBasicData eobd = new EndOfBasicData(items[i]);
+                }
+                else if (messagefields[0] == "BDIn")
+                {
+                    BasicDataIndex bdin = new BasicDataIndex(items[i]);
                 }
 
             }

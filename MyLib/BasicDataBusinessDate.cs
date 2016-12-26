@@ -15,7 +15,13 @@ namespace MyLib
         public BasicDataBusinessDate(string data)
         {
             string[] words = data.Split(';');
-            date =DateTime.ParseExact( words[1].Substring(2, words[1].Length-2),"yyyyMMdd", CultureInfo.InvariantCulture);            
+            date =DateTime.ParseExact( words[1].Substring(2, words[1].Length-2),"yyyyMMdd", CultureInfo.InvariantCulture);
+
+        }
+
+        public override string ToString()
+        {
+            return this.GetType().Name + "\n\tdate=" + date.ToString();
         }
     }
     
