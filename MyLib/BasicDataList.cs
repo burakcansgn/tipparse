@@ -16,38 +16,35 @@ namespace MyLib
         public readonly string NAm;
         public readonly string LCy;
         public readonly Boolean TCe;
+        string[] checks = { "i", "Si", "s", "PAi", "SYm", "NAm", "LCy", "TCe" };
 
         public BasicDataList(string name)
         {
             string[] words = name.Split(';');
-            i = Int32.Parse(words[1].Substring(1, words[1].Length - 1));
-            Si = words[2].Substring(2, words[2].Length - 2);
-            s = Int32.Parse(words[3].Substring(1, words[3].Length - 1));
-            if ((words[4].Substring(0, 3) != "PAi")) {
-                SYm = (words[4].Substring(3, words[4].Length - 3));
-                NAm = words[5].Substring(3, words[5].Length - 3);
-                LCy = words[6].Substring(3, words[6].Length - 3);
-                if (words[7].Substring(3, words[7].Length - 3) == "Y")
-                    TCe = true;
-                 else
-                TCe = false;
-            
-        }
-        else
+            for (int m = 1; m < words.Length; m++)
             {
-                PAi = Int32.Parse(words[4].Substring(3, words[4].Length - 3));
-                SYm = (words[5].Substring(3, words[5].Length - 3));
-                NAm = words[6].Substring(3, words[6].Length - 3);
-                LCy = words[7].Substring(3, words[7].Length - 3);
-                if (words[8].Substring(3, words[8].Length - 3) == "Y")
-                    TCe = true;
-                else
-                    TCe = false;
+                if (words[m].StartsWith(checks[0]))
+                    i = Int32.Parse(words[m].Substring(1, words[m].Length - 1));
+                else if (words[m].StartsWith(checks[1]))
+                    Si = words[m].Substring(2, words[m].Length - 2);
+                else if (words[m].StartsWith(checks[2]))
+                    s = Int32.Parse(words[m].Substring(1, words[m].Length - 1));
+                else if (words[m].StartsWith(checks[3]))
+                    PAi = Int32.Parse(words[m].Substring(3, words[m].Length - 3));
+                else if (words[m].StartsWith(checks[4]))
+                    SYm = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[5]))
+                    NAm = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[6]))
+                    LCy = words[m].Substring(3, words[m].Length - 3);
+                else if (words[m].StartsWith(checks[7]))
+                {
+                    if (words[m].Substring(2, words[m].Length - 2) == "N")
+                        TCe = false;
+                    else
+                        TCe = true;
+                }
             }
         }
-
-
-
-       
     }
 }

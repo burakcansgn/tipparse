@@ -50,6 +50,27 @@ namespace TipFileParse
                 {
                     BasicDataExchange bdx = new BasicDataExchange(items[i]);
                 }
+                else if (messagefields[0] == "BDm")
+                {
+                    BasicDataMarket bdm = new BasicDataMarket(items[i]);
+                }
+                else if (messagefields[0] == "BDTd")
+                {
+                    BasicDataNonTradingDays bdtd = new BasicDataNonTradingDays(items[i]);
+                }
+                else if (messagefields[0] == "BDTm")
+                {
+                    BasicDataTradingScheme bdtm = new BasicDataTradingScheme(items[i]);
+                }
+                else if (messagefields[0] == "BDLi")
+                {
+                    BasicDataList bdli = new BasicDataList(items[i]);
+                }
+                else if (messagefields[0] == "BDs")
+                {
+                    BasicDataSector bds = new BasicDataSector(items[i]);
+                }
+
             }
         }
     }
