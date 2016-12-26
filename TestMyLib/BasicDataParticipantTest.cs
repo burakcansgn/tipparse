@@ -25,5 +25,19 @@ namespace TestMyLib
             Assert.AreEqual("SOGETRISXXX",bdp.BIc);
             Assert.AreEqual(false,bdp.GRs);
         }
+        [Test]
+        public void ParseBasicDataParticipant2()
+        {
+
+            string data = "BDp;i2192;SiBIDSEC;s1;SYmBIDSEC;NAmDSEC;PAt2164;GRsN;";
+            BasicDataParticipant bdp = new BasicDataParticipant(data);
+            Assert.AreEqual(2192, bdp.i);
+            Assert.AreEqual("BIDSEC", bdp.Si);
+            Assert.AreEqual(1, bdp.s);
+            Assert.AreEqual("BIDSEC", bdp.SYm);
+            Assert.AreEqual("DSEC", bdp.NAm);
+            Assert.AreEqual(2164, bdp.PAt);
+            Assert.AreEqual(false, bdp.GRs);
+        }
     }
 }

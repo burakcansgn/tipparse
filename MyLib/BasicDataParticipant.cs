@@ -28,11 +28,12 @@ namespace MyLib
             NAm = words[5].Substring(3, words[5].Length - 3);
             PAt = Int32.Parse(words[6].Substring(3, words[6].Length - 3));
             BIc = words[7].Substring(3, words[7].Length - 3);
+            if (words[8] != "") { 
             if (words[8].Substring(3, words[8].Length - 3) == "N")
                 GRs = false;
             else
                 GRs = true;
-
+            }
         }
     }
 }
